@@ -164,3 +164,38 @@ body {
         padding: 40px 25px;
     }
 }
+
+/* 
+    |\  |   __
+    | \ |  |_   |  |
+    |  \|  |__  |/\|
+
+
+*/
+
+/* Register page specific styles */
+.register-title {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* 
+    |\  |   __
+    | \ |  |_   |  |
+    |  \|  |__  |/\|
+
+
+*/
+
+/* Forgot password page specific styles */
+.forgot-title {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* You can keep the existing input-field and button styles */

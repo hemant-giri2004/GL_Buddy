@@ -38,3 +38,57 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add your navigation logic here
     });
 });
+
+
+// |\  |   __
+// | \ |  |_   |  |
+// |  \|  |__  |/\|
+
+
+// Registration form handling
+const registerForm = document.getElementById('registerForm');
+if (registerForm) {
+    registerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        
+        // Basic validation
+        if (!name || !email || !password) {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        // Here you would typically send the data to a server
+        console.log('Registration attempt:', { name, email, password });
+    });
+}
+
+// |\  |   __
+// | \ |  |_   |  |
+// |  \|  |__  |/\|
+
+// Forgot Password form handling
+const forgotPasswordForm = document.getElementById('forgotPasswordForm');
+if (forgotPasswordForm) {
+    forgotPasswordForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        
+        // Basic validation
+        if (!name || !email || !password) {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        // Here you would typically send the data to a server
+        console.log('Password reset attempt:', { name, email, password });
+    });
+}
