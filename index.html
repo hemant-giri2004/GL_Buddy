@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GL Buddy: login page</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GL BUDDY</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="GL BUDDY Logo">
+            <span class="logo-text">GL BUDDY</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">LOG IN</a>
+            <a href="#">REGISTER</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Login Box -->
+        <div class="login-box">
+            <!-- Lock Icon -->
+            <div class="lock-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+                <!-- Email Input -->
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Email" autocomplete="off">
+                </div>
+
+                <!-- Password Input -->
+                <div class="input-field">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+
+            <!-- Additional Links -->
+            <div class="links">
+                <a href="#" id="createAccount">Create an Account</a>
+                <a href="#" id="forgotPassword">Forgot your email or password?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
 </body>
 </html>
