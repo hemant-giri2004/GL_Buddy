@@ -1,11 +1,12 @@
+<!-- chat.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat - GL BUDDY</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
@@ -18,9 +19,9 @@
             </div>
         </div>
         <div class="nav-right">
-            <a href="#" class="nav-link">Home</a>
+            <a href="chat.html" class="nav-link active">Home</a>
             <a href="about-us.html" class="nav-link">About Us</a>
-            <a href="suggestion-box.html" class="nav-link">Suggestion box</a>
+            <a href="suggestion-box.html" class="nav-link">Suggestion Box</a>
             <a href="index.html" class="nav-link">Log Out</a>
         </div>
     </nav>
@@ -29,46 +30,21 @@
     <div class="chat-container">
         <!-- Chat Messages Area -->
         <div class="chat-messages" id="chatMessages">
-            <!-- Messages will be added here dynamically -->
+            <!-- Welcome message will be added here by JavaScript -->
         </div>
 
         <!-- Chat Input Area -->
         <div class="chat-input">
-            <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
-            <button id="sendButton">Send</button>
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Enter your enquiry number..."
+                autocomplete="off"
+            >
+            <button id="sendButton" class="send-button">Send</button>
         </div>
     </div>
 
-    <!-- Add debugging tools -->
-    <div style="position: fixed; bottom: 10px; right: 10px; z-index: 1000;">
-        <button onclick="testResponses()">Test Bot</button>
-    </div>
-
-    <!-- Add the conversation array -->
-    <script>
-        const conversation = [
-            // Your conversation array here
-        ];
-    </script>
-
-    <!-- Add debugging script -->
-    <script>
-        function testResponses() {
-            console.log('Testing bot responses...');
-            console.log('Conversation array loaded:', conversation ? 'Yes' : 'No');
-            console.log('Conversation length:', conversation.length);
-            
-            // Test basic responses
-            const testInputs = ['Hi', '1', '1.1'];
-            testInputs.forEach(input => {
-                console.log(`Testing input: "${input}"`);
-                const response = getResponse(input);
-                console.log('Response:', response);
-            });
-        }
-    </script>
-
-    <!-- Add the main scripts -->
     <script src="js/chatResponses.js"></script>
     <script src="js/chat.js"></script>
 </body>
