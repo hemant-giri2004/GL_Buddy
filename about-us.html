@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GL BUDDY</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            background-color: #e1effd;
+            min-height: 100vh;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #2c3135;
+            padding: 20px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a {
+            color: #9ba1a6;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Campus Image Section */
+        .campus-image {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .campus-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* About Content */
+        .about-content {
+            background-color: #2c3135;
+            padding: 40px;
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2980b9;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            margin-top: 30px;
+        }
+
+        .features h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2980b9;
+        }
+
+        .features ul {
+            list-style-type: none;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .features li:before {
+            content: "•";
+            color: #2980b9;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 20px 30px;
+            }
+
+            .campus-image {
+                height: 300px;
+            }
+
+            .about-content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="GL BUDDY Logo">
+            <span class="logo-text">GL BUDDY</span>
+        </div>
+        <div class="nav-links">
+            <a href="chat.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="suggestion-box.html">Suggestion Box</a>
+            <a href="index.html">Log Out</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Campus Image -->
+        <div class="campus-image">
+            <img src="assets/collegeCampus.jpg" alt="GL Bajaj Campus">
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content">
+            <h1>Welcome to GL BUDDY</h1>
+            <p>
+                GL BUDDY is an innovative chatbot designed specifically for GL Bajaj Institute of Technology and Management. 
+                Our platform serves as a comprehensive information hub for students, faculty, parents, and visitors, 
+                providing instant access to crucial information about the institution.
+            </p>
+
+            <p>
+                As your virtual assistant, GL BUDDY is available 24/7 to answer queries, provide guidance, and ensure 
+                that you have easy access to all the information you need about our institution.
+            </p>
+
+            <div class="features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Instant access to academic information and schedules</li>
+                    <li>Quick navigation to important college resources</li>
+                    <li>Real-time updates about college events and notices</li>
+                    <li>Easy access to examination schedules and results</li>
+                    <li>Information about campus facilities and services</li>
+                    <li>Direct links to important college portals</li>
+                </ul>
+            </div>
+
+            <div class="features">
+                <h2>Our Mission</h2>
+                <p>
+                    Our mission is to streamline communication and information access within the GL Bajaj community. 
+                    We aim to provide accurate, timely, and relevant information to all stakeholders, enhancing the 
+                    overall educational experience at GL Bajaj Institute of Technology and Management.
+                </p>
+            </div>
+
+            <div class="features">
+                <h2>Why GL BUDDY?</h2>
+                <ul>
+                    <li>24/7 Availability for instant information access</li>
+                    <li>User-friendly interface for seamless navigation</li>
+                    <li>Comprehensive coverage of college-related information</li>
+                    <li>Regular updates to ensure accurate information</li>
+                    <li>Dedicated support for multiple user groups</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,38 +1,75 @@
-<!-- chat.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat - GL BUDDY</title>
-    
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo-container">
-            <img src="assets/logo.png" alt="GL BUDDY Logo">
-            <span class="logo-text">GL BUDDY</span>
+    <nav class="chat-navbar">
+        <div class="nav-left">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="GL BUDDY Logo">
+                <span class="logo-text">GL BUDDY</span>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="#" id="userProfile">User Name</a>
-            <a href="index.html">Logout</a>
+        <div class="nav-right">
+            <a href="#" class="nav-link">Home</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
+            <a href="suggestion-box.html" class="nav-link">Suggestion box</a>
+            <a href="index.html" class="nav-link">Log Out</a>
         </div>
     </nav>
 
-    <!-- Temporary Content -->
-    <div class="container">
-        <div class="login-box">
-            <h2 class="page-title">Welcome to Chat</h2>
-            <p style="color: white; text-align: center;">Chat interface will be implemented soon.</p>
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be added here dynamically -->
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
+            <button id="sendButton">Send</button>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- Add debugging tools -->
+    <div style="position: fixed; bottom: 10px; right: 10px; z-index: 1000;">
+        <button onclick="testResponses()">Test Bot</button>
+    </div>
+
+    <!-- Add the conversation array -->
+    <script>
+        const conversation = [
+            // Your conversation array here
+        ];
+    </script>
+
+    <!-- Add debugging script -->
+    <script>
+        function testResponses() {
+            console.log('Testing bot responses...');
+            console.log('Conversation array loaded:', conversation ? 'Yes' : 'No');
+            console.log('Conversation length:', conversation.length);
+            
+            // Test basic responses
+            const testInputs = ['Hi', '1', '1.1'];
+            testInputs.forEach(input => {
+                console.log(`Testing input: "${input}"`);
+                const response = getResponse(input);
+                console.log('Response:', response);
+            });
+        }
+    </script>
+
+    <!-- Add the main scripts -->
+    <script src="js/chatResponses.js"></script>
+    <script src="js/chat.js"></script>
 </body>
 </html>
